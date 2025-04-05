@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="time" step="any" placeholder="quantidade">
+
+    <div class="total"></div>
+
+    <script>
+        let input = document.querySelector("input");
+        let tot = document.querySelector(".total")
+
+        input.addEventListener("change", () => {
+            let inp = input.value.replace(":",".")
+            let total = inp * 5;
+            tot.innerHTML = `total: ${total}`;
+            
+        })
+
+
+    </script>
+
+</body>
+</html>

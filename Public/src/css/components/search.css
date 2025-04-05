@@ -1,0 +1,19 @@
+.search{
+    display: flex;
+}
+
+.search > input{
+    margin: 0 10px 0 0;
+}
+
+.search > button{
+    width: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .search{
+        display: none;
+    }   
+    
+}

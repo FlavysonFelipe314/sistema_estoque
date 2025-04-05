@@ -1,0 +1,30 @@
+header{
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .profile{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-white);
+    font-size: 25px;
+    border-radius: 60px;
+    cursor: pointer;
+    background-color: var(--hover-blue);
+}
+
+header .menu-trigger{
+    font-size: 35px;
+    color: var(--primary-gray);
+    cursor: pointer;
+}
+
+header .menu-trigger:hover{
+    color: var(--hover-gray);
+}

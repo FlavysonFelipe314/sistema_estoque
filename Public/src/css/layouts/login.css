@@ -1,0 +1,95 @@
+section{
+    width: 100%;
+    display: flex;
+    background-color: var(--primary-darkBlue);
+}
+
+section aside{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+section aside .opacity{
+    width: 100%;
+    background-color: var(--primary-darkBlue);
+    position: absolute;
+    height: 100vh;
+    opacity: 0.9;
+}
+
+section aside .container{
+    position: relative;
+}
+
+section aside:nth-child(1){
+    width: 65%;
+    background-image: url(../../assets/images/banner.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: var(--primary-white);
+}
+
+section aside:nth-child(1) img{
+    width: 200px;
+}
+
+section aside:nth-child(1) h2{
+    font-size: 22px;
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+section aside:nth-child(2){
+    width: 35%;
+    background-color: var(--primary-white);
+}
+
+section aside:nth-child(2) img{
+    width: 130px;
+}
+
+section aside:nth-child(2) h3{
+    font-size: 25px;
+    margin: 10px 0 25px 0;
+    font-weight: 400;
+}
+
+section aside:nth-child(2) form{
+    padding: 0 20px;
+}
+
+
+section aside:nth-child(2) form label:last-child{
+    justify-content: center;
+    margin: 30px 0;
+}
+
+section aside:nth-child(2) form label:last-child a{
+    color: var(--primary-darkBlue);
+}
+
+
+section aside:nth-child(2) form label:last-child a:hover{
+    color: var(--hover-darkBlue);
+}
+
+@media screen and (max-width: 1000px) {
+    section aside:nth-child(1){
+        width: 0;
+    }
+    section aside:nth-child(2){
+        width: 100%;
+    }
+    section aside:nth-child(2) form{
+        padding: 0;
+    }
+    section span{
+        font-size: 16px;
+    }        
+}

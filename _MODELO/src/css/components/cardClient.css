@@ -1,0 +1,177 @@
+.content-card{
+    width: 100%;
+    display: flex;
+    margin: 0 0 20px 0;
+    justify-content: space-between;
+}
+
+.card-single{
+    width: 49.2%;
+}
+
+.card-single .top-card{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-blue);
+    align-items: center;
+    border-radius: 5px;
+    color: var(--primary-white);
+    padding: 15px;
+    margin: 0 0 10px 0;
+}
+
+.card-single .top-card span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.top-card > button{
+    width: 130px;
+    cursor: pointer;
+    background-color: #ffffffb7;
+}
+
+.content-client{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--primary-white);
+    height: 280px;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    overflow-y: scroll;
+}
+
+.content-client::-webkit-scrollbar {
+    width: 10px;       
+}
+  
+.content-client::-webkit-scrollbar-track {
+    background: var(--primary-white);   
+}
+  
+.content-client::-webkit-scrollbar-thumb {
+    background-color: var(--primary-blue);
+    border: 3px solid var(--primary-white);
+    border-radius: 20px; 
+}
+
+
+.client-single,
+.first-side,
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-card .dates{
+    display: flex;
+}
+
+.top-card .dates input{
+    width: 120px;
+    font-size: 12px;
+    margin: 0 10px 0 0;
+}
+
+.client-single{
+    margin: 0 0 12px 0;
+}
+
+.profile-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    display: flex;
+    margin:0 10px 0 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-icon span{
+    font-size: 40px;
+}
+
+.client-single h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.client-single h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-gray);
+    margin: 10px 0 0 0;
+}
+
+.client-single .buttons button{
+    font-size: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+
+.info-tot{
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .content-card{
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .card-single{
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .client-single{
+        padding: 0 0 20px 0;
+        border-bottom: 0.5px solid #ccc;
+        flex-direction: column;
+    }
+
+    .client-single h3{
+        font-size: 18px;
+    }
+    
+    .client-single h4{
+        font-size: 14px;
+    }
+
+    .buttons{
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0 0 0;
+    }
+
+    .card-single .top-card{
+        width: 100%;
+        flex-direction: column;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    .top-card span{
+        margin: 0 0 10px 0;
+    }
+
+    .top-card > button{
+        height: 40px;
+        width: 100px;
+    }
+
+    .info-tot{
+        margin: 10px 0 5px 0;
+    }
+}

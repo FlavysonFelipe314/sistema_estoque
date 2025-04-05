@@ -1,0 +1,24 @@
+.wraper-100{
+    width: 100%;
+    margin: 8px 0;
+    display:flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.wraper-50{
+    width: 48%;
+    margin: 8px 0;
+    display:flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.wraper-button{
+    width: 100% !important;
+    margin: 10px 0;
+}
+
+.space-input{
+    margin: 15px 0;
+}

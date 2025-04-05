@@ -1,0 +1,30 @@
+.title-action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:10px 0 20px 0;
+}
+
+.title-action h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.title-action button{
+    width: 200px;
+}
+
+@media screen and (max-width: 500px) {
+    .title-action{
+        flex-direction: column;
+    }
+
+    .title-action h1{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .title-action button{
+        margin: 10px 0 0 0;
+    }
+}

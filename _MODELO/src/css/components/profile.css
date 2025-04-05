@@ -1,0 +1,92 @@
+.profile-content{
+    width: 0;
+    transition: 0.1s;
+    position: fixed;
+    height: 100vh;
+    background-color: var(--primary-white);
+    right: 0;
+    border-left: 4px solid var(--primary-lightGray);
+    padding: 20px 0;
+    top: 0;
+}
+
+.profile-slide{
+    width: 350px !important;
+    transition: 0.1s !important;
+}
+
+.close-profile{
+    width: 100%;
+    text-align: end;
+}
+
+.close-profile span{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.user-info .profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    margin: 0 10px 0 0;
+}
+
+.user-info .profile i{
+    font-size: 25px;
+}
+
+.user-info .text h1{
+    font-size: 20px;
+}
+
+.user-info .text h2{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+    color: var(--primary-gray);
+}
+.options-profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.options-profile a{
+    width: 100%;
+    background-color: var(--primary-lightGray);
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: var(--primary-black);
+    margin: 0 0 10px 0;
+}
+
+.options-profile a:hover{
+    background-color: var(--hover-lightGray);
+}
+
+.options-profile span:nth-child(1){
+    font-size: 25px;
+    margin: 0 8px 0 0;
+    color: var(--primary-gray);
+}
+
+@media screen and (max-width: 500px){
+    .profile-slide{
+        width: 100% !important;
+        transition: 0.1s !important;
+    }
+}

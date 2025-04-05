@@ -1,0 +1,12 @@
+
+section.clients{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 1000px){
+    section aside:nth-child(2) > .container{
+        padding: 0 2%;
+    }
+}
